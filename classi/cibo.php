@@ -11,5 +11,25 @@ class Cibo extends AnimalProducts{
         $this->scadenza=$_scadenza;
     }
     
+
+    /**
+     * Get the value of scadenza
+     */ 
+    public function getScadenza()
+    {
+        return $this->scadenza;
+    }
+
+    /**
+     * Set the value of scadenza
+     *
+     * @return  self
+     */ 
+    public function setScadenza($scadenza)
+    {
+        $this->scadenza = $scadenza;
+
+        return $this;
+    }
 }
 
