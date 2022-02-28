@@ -1,12 +1,20 @@
 <?php
 
 class AnimalProducts{
-    private string $nome;
-    private int $peso;
-    private bool $disponibilita;
-    private float $prezzo;
-    private string $codiceEan;
+    private $nome;
+    private $peso;
+    private $disponibilita;
+    private $prezzo;
+    private $codiceEan;
 
+    public function __construct($_nome,$_peso,$_disponibilita,$_prezzo,$_codiceEan)
+    {
+        $this->nome=$_nome;
+        $this->peso=$_peso;
+        $this->disponibilita=$_disponibilita;
+        $this->prezzo=$_prezzo;
+        $this->codiceEan=$_codiceEan;
+    }
     /**
      * Get the value of nome
      */ 
